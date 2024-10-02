@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div class="form-container">
+        <h2> Movie Review</h2>
+        <form action="about.html" method="post" target="_blank">
+
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="movie-title">Movie Title:</label>
+                <input type="text" id="movie-title" name="movie-title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Rating (out of 5):</label>
+                <select id="rating" name="rating" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="review">Your Review:</label>
+                <textarea id="review" name="review" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" onclick="notify()">Submit Review</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function notify() {
+            alert("send the details...")
+        }
+    </script>
+
+</body>
+
+</html>
