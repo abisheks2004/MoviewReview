@@ -12,7 +12,7 @@
 <body>
     <div class="form-container">
         <h2> Movie Review</h2>
-        <form action="about.html" method="get" target="_blank">
+        <form action="about.html" method="post" target="_blank">
 
             <div class="form-group">
                 <label for="name">Name:</label>
@@ -51,9 +51,8 @@
         </form>
     </div>
     <script>
-        function notify() {
-            alert("send the details...")
-        }
+        document.getElementById('reviewForm').addEventListener('submit', function(event) {
+            alert("Sending the details...");
     </script>
 
 </body>
